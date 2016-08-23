@@ -18,7 +18,7 @@
         <div class="col-md-6">
           <h2>Add a contact:</h2>
           <form id="new-contact">
-            <div class="form group">
+            <div class="form-group">
               <label for="new-first-name">firstname</label>
               <input type="text" class="form-control" id="new-first-name">
             </div>
@@ -26,8 +26,25 @@
               <label for="new-last-name">Last name</label>
               <input type="text" class="form-control" id="new-last-name">
             </div>
-
+            <div class="new-address">
+              <div class="form-group">
+                <label for="new-street">Street</label>
+                <input type="text" class="form-control new-street">
+              </div>
+              <div class="form-group">
+                <label for="new-city">City</label>
+                <input type="text" class="form-control new-city">
+              </div>
+              <div class="form-group">
+                <label for="new-state">State</label>
+                <input type="text" class="form-control new-state">
+              </div>
+            </div>
+            <div class="newAddressSpot">
+            </div>
             <button type="submit" class="btn">Add</button>
+            <button type="button" id="add" class="btn">Add Address</button>
+            <button type="button" id="remove" class="btn">remove Address</button>
           </form>
 
           <h2>Contacts:</h2>
@@ -41,6 +58,9 @@
 
             <p>First name: <span class="first-name"></span></p>
             <p>Last name: <span class="last-name"></span></p>
+            <p>Address:</p>
+            <ul id="addresses">
+            </ul>
           </div>
         </div>
 
